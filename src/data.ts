@@ -97,6 +97,9 @@ export const skillsDeveloped = [
   'Professional Writing',
 ] as const;
 
+export const portfolioClosing =
+  'This portfolio represents my growth from writing for grades to writing for real audiences, real ventures, and real impact.';
+
 export const sectionCopy = {
   featuredProjects: {
     description:
@@ -105,20 +108,50 @@ export const sectionCopy = {
   socialVenturePlan: {
     subtitle:
       'Turning incarceration barriers into real technology careers through paid client work.',
-    description:
+    overview:
       'The Social Venture Plan taught me how to turn an idea into something people could actually believe in and support. Building Code and Reentry forced me to research the realities of incarceration, unemployment, and workforce inequality while explaining the solution in a clear and convincing way. I learned how to balance storytelling with evidence by showing both the human impact of reentry barriers and the practical structure of the venture itself. More importantly, the project taught me that strong communication is what transforms a social mission into a realistic, fundable venture.',
+    skills: [
+      'Research-backed persuasion',
+      'Social venture storytelling',
+      'Budget justification',
+      'Audience-centered structure',
+      'Turning evidence into action',
+      'Writing for funders',
+    ],
   },
   pressRelease: {
-    description:
+    overview:
       'The press release project showed me how professional communication needs to be direct, clear, and easy to skim. I learned how important headlines, quotes, and structure are when trying to grab attention quickly. This assignment also helped me practice writing in an active voice and removing unnecessary words. It taught me how organizations communicate ideas to the public in a fast and persuasive way.',
+    skills: [
+      'Writing a newsworthy lead',
+      'Understanding media audiences',
+      'Creating urgency without overexplaining',
+      'Using quotes strategically',
+      'Turning a venture into a public story',
+    ],
   },
   writingGuide: {
-    description:
+    overview:
       'The Writing Guide project helped me better understand style, tone, voice, and concise writing. I learned how design and formatting affect whether readers stay engaged or stop reading. Creating examples of weak and strong writing made me more aware of common mistakes like repetition, passive voice, and fluff. This project changed the way I think about communication in professional settings.',
+    skills: [
+      'Explaining communication principles',
+      'Designing for readability',
+      'Writing instructions for real users',
+      'Using examples effectively',
+      'Connecting writing, design, and credibility',
+    ],
   },
   videoPitch: {
-    description:
+    overview:
       'The video pitch helped me practice communicating ideas clearly under time pressure. I learned how to quickly explain a problem, innovation, and impact in a short amount of time without sounding scripted. It also improved my confidence speaking directly to an audience. This assignment showed me that strong communication is not only about writing, but also about delivery and clarity.',
+    skills: [
+      'Spoken persuasion',
+      'Concise storytelling',
+      'Pitch structure',
+      'Emotional opening',
+      'Clear funding ask',
+      'Audience-centered delivery',
+    ],
   },
   artifacts: {
     description:

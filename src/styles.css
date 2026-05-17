@@ -426,6 +426,30 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.intro-closing {
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-top: 0.25rem;
+}
+
+.project-block__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-teal);
+  margin: 0 0 0.5rem;
+}
+
+.section-body .skills-block {
+  margin-top: 0;
+  padding-top: 1.5rem;
+}
+
+.section-body .video-card {
+  margin-top: 2rem;
+}
+
 .prose p {
   margin: 0 0 1.25rem;
   color: var(--color-text-muted);

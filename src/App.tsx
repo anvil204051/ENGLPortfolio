@@ -3,6 +3,7 @@ import { Section } from './components/Section';
 import { ProjectCard } from './components/ProjectCard';
 import { ArtifactCard } from './components/ArtifactCard';
 import { SkillPill } from './components/SkillPill';
+import { ProjectSection } from './components/ProjectSection';
 import {
   journeySteps,
   featuredProjects,
@@ -10,6 +11,7 @@ import {
   skillsDeveloped,
   sectionCopy,
   pitchVideoSrc,
+  portfolioClosing,
 } from './data';
 
 function scrollTo(href: string) {
@@ -73,6 +75,7 @@ export default function App() {
                 create writing that feels professional, engaging, and built for real world audiences
                 rather than just the classroom.
               </p>
+              <p className="intro-closing document-text">{portfolioClosing}</p>
             </div>
 
             <div className="timeline">
@@ -114,18 +117,27 @@ export default function App() {
           title="Social Venture Plan"
           subtitle={sectionCopy.socialVenturePlan.subtitle}
         >
-          <p className="narrative document-text">{sectionCopy.socialVenturePlan.description}</p>
+          <ProjectSection
+            overview={sectionCopy.socialVenturePlan.overview}
+            skills={sectionCopy.socialVenturePlan.skills}
+          />
         </Section>
 
         {/* PRESS RELEASE */}
         <Section id="press-release" title="Press Release" dark>
-          <p className="narrative document-text">{sectionCopy.pressRelease.description}</p>
+          <ProjectSection
+            overview={sectionCopy.pressRelease.overview}
+            skills={sectionCopy.pressRelease.skills}
+          />
         </Section>
 
         {/* VIDEO PITCH */}
         <Section id="pitch-video" title="Pitch Video">
-          <p className="narrative document-text">{sectionCopy.videoPitch.description}</p>
-          <div className="video-card">
+          <ProjectSection
+            overview={sectionCopy.videoPitch.overview}
+            skills={sectionCopy.videoPitch.skills}
+          >
+            <div className="video-card">
             <h3 className="video-card__title">Pitch Video</h3>
             {pitchVideoSrc ? (
               <video
@@ -153,12 +165,16 @@ export default function App() {
                 </p>
               </div>
             )}
-          </div>
+            </div>
+          </ProjectSection>
         </Section>
 
         {/* WRITING GUIDE */}
         <Section id="writing-guide" title="Writing Guide" dark>
-          <p className="narrative document-text">{sectionCopy.writingGuide.description}</p>
+          <ProjectSection
+            overview={sectionCopy.writingGuide.overview}
+            skills={sectionCopy.writingGuide.skills}
+          />
         </Section>
 
         {/* ARTIFACTS */}
